@@ -1,0 +1,23 @@
+[
+  {
+    "name": "components-chart",
+    "path": "/components/chart",
+    "component": "C:\\\\Users\\\\Lucas\\\\Desktop\\\\dataEduc\\\\pages\\\\components\\\\chart.vue",
+    "chunkName": "pages/components/chart",
+    "_name": "_8644cf84"
+  },
+  {
+    "name": "components-chart2",
+    "path": "/components/chart2",
+    "component": "C:\\\\Users\\\\Lucas\\\\Desktop\\\\dataEduc\\\\pages\\\\components\\\\chart2.vue",
+    "chunkName": "pages/components/chart2",
+    "_name": "_4225ce38"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "C:\\\\Users\\\\Lucas\\\\Desktop\\\\dataEduc\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "_name": "_8b1256f0"
+  }
+]
