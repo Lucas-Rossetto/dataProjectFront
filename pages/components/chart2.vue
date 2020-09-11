@@ -12,62 +12,61 @@ export default {
   },
   extends: Line,
   mounted() {
-    this.renderChart(this.chartData);
+    //
+
+    //
+    this.renderChart({
+      labels: [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "aout",
+      ], // nombre d'années
+      datasets: [
+        {
+          label: ["VERSAILLE"], // Label de l'académie
+          backgroundColor: ["pink"],
+          data: [40, 39, 10, 40, 39, 40, 50], //résultat du pourcentage d'obtention du bac sur x années
+        },
+        {
+          label: ["data deux"],
+          backgroundColor: ["blue"],
+          data: [50, 30, 10, 50, 40, 70, 30],
+        },
+      ],
+    });
   },
-  created() {
-    axios
-      .get("https://api.coindesk.com/v1/bpi/currentprice.json")
+  /*created() {
+    /*axios
+      .get("http://foussier-printer.ddns.net/academies/")
       .then((response) => {
         const responseData = response.data;
-        this.chartData = {
-          labels: responseData.map((item) => item.annee),
-          datasets: [
-            {
-              label: "VERSAILLES",
-              backgroundColor: "yellow",
-              data: responseData.map((item) => item.pourcentageGarcon),
-            },
-            {
-              label: "CRETEIL",
-              backgroundColor: "red",
-              data: responseData.map((item) => item.pourcentageFilles),
-            },
-            {
-              label: "LILLE",
-              backgroundColor: "blue",
-              data: responseData.map((item) => item.pourcentageGeneral),
-            },
-            {
-              label: "NANTES",
-              backgroundColor: "green",
-              data: responseData.map((item) => item.pourcentageGeneral),
-            },
-            {
-              label: "RENNES",
-              backgroundColor: "purple",
-              data: responseData.map((item) => item.pourcentageGeneral),
-            },
-            {
-              label: "GRENOBLE",
-              backgroundColor: "black",
-              data: responseData.map((item) => item.pourcentageGeneral),
-            },
-            {
-              label: "LYON",
-              backgroundColor: "orange",
-              data: responseData.map((item) => item.pourcentageGeneral),
-            },
-            {
-              label: "PARIS",
-              backgroundColor: "pink",
-              data: responseData.map((item) => item.pourcentageGeneral),
-            },
-          ],
-        };
-      })
-      .catch((e) => {
-        this.errors.push(e);
+        console.log(responseData);
+        this.chartData = {};
+        for (let element in responseData) {
+          let academie = responseData[element].academie;
+          for (let reussite in responseData[element].reussiteannee_set) {
+            let annee = responseData[element].reussiteannee_set[reussite].annee;
+            let pourcentageGeneral =
+              responseData[element].reussiteannee_set[reussite]
+                .pourcentageGeneral;
+            //console.log(academie);
+            //console.log(annee);
+            //console.log(pourcentageGeneral);
+
+  },*/
+  methods: {
+    addData(chart, label, data) {
+      chart.data.labels.push(label);
+      chart.data.datasets.forEach((dataset) => {
+        dataset.data.push(data);
       });
+      chart.update();
+    },
   },
 };
 </script>
