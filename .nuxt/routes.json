@@ -14,6 +14,27 @@
     "_name": "_4225ce38"
   },
   {
+    "name": "components-chart3",
+    "path": "/components/chart3",
+    "component": "C:\\\\Users\\\\Lucas\\\\Desktop\\\\dataEduc\\\\pages\\\\components\\\\chart3.vue",
+    "chunkName": "pages/components/chart3",
+    "_name": "_42099f36"
+  },
+  {
+    "name": "components-chart4",
+    "path": "/components/chart4",
+    "component": "C:\\\\Users\\\\Lucas\\\\Desktop\\\\dataEduc\\\\pages\\\\components\\\\chart4.vue",
+    "chunkName": "pages/components/chart4",
+    "_name": "_41ed7034"
+  },
+  {
+    "name": "components-chart5",
+    "path": "/components/chart5",
+    "component": "C:\\\\Users\\\\Lucas\\\\Desktop\\\\dataEduc\\\\pages\\\\components\\\\chart5.vue",
+    "chunkName": "pages/components/chart5",
+    "_name": "_41d14132"
+  },
+  {
     "name": "index",
     "path": "/",
     "component": "C:\\\\Users\\\\Lucas\\\\Desktop\\\\dataEduc\\\\pages\\\\index.vue",

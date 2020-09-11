@@ -3,7 +3,7 @@ import { Line, mixins } from "vue-chartjs";
 import axios from "axios";
 
 export default {
-  name: "chart2",
+  name: "chart5",
   mixins: [mixins.reactiveData],
   data() {
     return {
@@ -47,10 +47,9 @@ export default {
           labelData = [];
           for (let reussite in responseData[element].reussiteannee_set) {
             let annee = responseData[element].reussiteannee_set[reussite].annee;
-            let pourcentageGeneral =
-              responseData[element].reussiteannee_set[reussite]
-                .pourcentageGeneral;
-            valueData.push(pourcentageGeneral);
+            let pourcentageS =
+              responseData[element].reussiteannee_set[reussite].pourcentageS;
+            valueData.push(pourcentageS);
             labelData.push(annee);
           }
           data.push({
