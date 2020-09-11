@@ -6,4 +6,4 @@ npm install
 
 npm run dev
 
-!(imagePagePrincipal.png?raw=true "Page d'accueil de l'application")
+![image](imagePagePrincipal.png?raw=true "Page d'accueil de l'application")
